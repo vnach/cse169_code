@@ -22,7 +22,7 @@ bool Tokenizer::Open(const char *fname) {
         printf("ERROR: Tokenzier::Open()- Can't open file '%s'\n", fname);
         return false;
     }
-    strcpy(FileName, fname);
+    strcpy(FileName, fname); 
     return true;
 }
 

@@ -22,6 +22,8 @@ public:
     //tree data
     Joint* parent;
     std::vector<Joint*> children;
+    
+    char jointName[256];
 
     //tokens
     glm::vec3 offset;
@@ -32,6 +34,8 @@ public:
     glm::vec2 rotzlimit;
     glm::vec3 pose;
 
+    std::vector<DOF*> dofs;
+
     Joint();
     ~Joint();
 
@@ -39,5 +43,6 @@ public:
     void Update(glm::mat4& parentMatrix);
     void Draw(glm::mat4 camMatrix, GLuint shader);
     void AddChild(Joint* jnt);
+    void GetJoints(std::vector<Joint*>* joints);
 
 };

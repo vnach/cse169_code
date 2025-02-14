@@ -1,3 +1,7 @@
+#include <imgui/imgui.h>
+#include <imgui/imgui_impl_glfw.h>
+#include <imgui/imgui_impl_opengl3.h>
+
 #include "Window.h"
 #include "core.h"
 
@@ -48,6 +52,8 @@ int main(void) {
     GLFWwindow* window = Window::createWindow(800, 600);
     if (!window) exit(EXIT_FAILURE);
 
+
+
     // Print OpenGL and GLSL versions.
     print_versions();
     // Setup callbacks.
@@ -60,14 +66,45 @@ int main(void) {
     // Initialize objects/pointers for rendering; exit if initialization fails.
     if (!Window::initializeObjects()) exit(EXIT_FAILURE);
 
+    // Setup Dear ImGui context
+    IMGUI_CHECKVERSION();
+    ImGui::CreateContext();
+    ImGuiIO& io = ImGui::GetIO();
+    io.ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard;     // Enable Keyboard Controls
+    io.ConfigFlags |= ImGuiConfigFlags_NavEnableGamepad;      // Enable Gamepad Controls
+
+
+    // Setup Platform/Renderer backends
+    ImGui_ImplGlfw_InitForOpenGL(window, true);          // Second param install_callback=true will install GLFW callbacks and chain to existing ones.
+    ImGui_ImplOpenGL3_Init("#version 330");
+
+    
+
     // Loop while GLFW window should stay open.
     while (!glfwWindowShouldClose(window)) {
+
+        // (Your code calls glfwPollEvents())
+//          ...
+//      Start the Dear ImGui frame
+        ImGui_ImplOpenGL3_NewFrame();
+        ImGui_ImplGlfw_NewFrame();
+        ImGui::NewFrame();
+        ImGui::ShowDemoWindow(); // Show demo window! :)
+        
+
+        //std::cout << "demo window" << std::endl;
+
         // Main render display callback. Rendering of objects is done here.
         Window::displayCallback(window);
 
         // Idle callback. Updating objects, etc. can be done here.
         Window::idleCallback();
+
     }
+
+    ImGui_ImplOpenGL3_Shutdown();
+    ImGui_ImplGlfw_Shutdown();
+    ImGui::DestroyContext();
 
     Window::cleanUp();
     // Destroy the window.

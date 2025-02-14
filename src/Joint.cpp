@@ -21,6 +21,11 @@ Joint::Joint()
 	worldMat = glm::mat4(1.0f);
 
 	parent = nullptr;
+	
+	for (int i = 0; i < 3; i++)
+	{
+		dofs.push_back(new DOF());
+	}
 }
 
 Joint::~Joint()
@@ -30,6 +35,7 @@ Joint::~Joint()
 
 bool Joint::Load(Tokenizer& t)
 {
+	t.GetToken(jointName);
 	t.FindToken("{");
 	while (1)
 	{
@@ -57,22 +63,31 @@ bool Joint::Load(Tokenizer& t)
 		{
 			rotxlimit.x = t.GetFloat();
 			rotxlimit.y = t.GetFloat();
+			dofs.at(0)->setMinMax(rotxlimit.x, rotxlimit.y);
 		}
 		else if (strcmp(temp, "rotylimit") == 0)
 		{
 			rotylimit.x = t.GetFloat();
 			rotylimit.y = t.GetFloat();
+			dofs.at(1)->setMinMax(rotylimit.x, rotylimit.y);
 		}
 		else if (strcmp(temp, "rotzlimit") == 0)
 		{
 			rotzlimit.x = t.GetFloat();
 			rotzlimit.y = t.GetFloat();
+			dofs.at(2)->setMinMax(rotzlimit.x, rotzlimit.y);
 		}
 		else if (strcmp(temp, "pose") == 0)
 		{
 			pose.x = t.GetFloat();
+			dofs.at(0)->setValue(pose.x);
+			dofs.at(0)->setName(jointName + ' X');
 			pose.y = t.GetFloat();
+			dofs.at(1)->setValue(pose.y);
+			dofs.at(1)->setName(jointName + ' Y');
 			pose.z = t.GetFloat();
+			dofs.at(2)->setValue(pose.z);
+			dofs.at(2)->setName(jointName + ' Z');
 		}
 		else if (strcmp(temp, "balljoint") == 0)
 		{
@@ -99,9 +114,12 @@ void Joint::Update(glm::mat4& parentMatrix)
 	//generate W matrix = W_parent * L
 	//note: GLM is column wise matrix
 
-	float xDOFVal = glm::clamp(pose.x, rotxlimit.x, rotxlimit.y);
-	float yDOFVal = glm::clamp(pose.y, rotylimit.x, rotylimit.y);
-	float zDOFVal = glm::clamp(pose.z, rotzlimit.x, rotzlimit.y);
+	//float xDOFVal = glm::clamp(pose.x, rotxlimit.x, rotxlimit.y);
+	//float yDOFVal = glm::clamp(pose.y, rotylimit.x, rotylimit.y);
+	//float zDOFVal = glm::clamp(pose.z, rotzlimit.x, rotzlimit.y);
+	float xDOFVal = dofs.at(0)->getValue();
+	float yDOFVal = dofs.at(1)->getValue();
+	float zDOFVal = dofs.at(2)->getValue();
 
 	glm::mat4 t_mat = glm::translate(glm::mat4(1.0f), offset);
 	glm::mat4 x_rot = glm::rotate(glm::mat4(1.0f), xDOFVal, glm::vec3(1, 0, 0));
@@ -136,5 +154,14 @@ void Joint::AddChild(Joint* jnt)
 {
 	jnt->parent = this;
 	children.push_back(jnt);
+}
+
+void Joint::GetJoints(std::vector<Joint*>* joints)
+{
+	for each (Joint * child in children)
+	{
+		joints->push_back(child);
+		child->GetJoints(joints);
+	}
 }
 

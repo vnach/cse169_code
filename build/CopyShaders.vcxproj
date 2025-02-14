@@ -66,7 +66,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\include;C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\include\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -76,7 +76,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\include;C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\include\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -86,7 +86,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\include;C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\include\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -96,7 +96,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\include;C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\include\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -108,7 +108,7 @@
     <CustomBuild Include="C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\build\CMakeFiles\aa79da70e9f5139c411378b90b195c95\CopyShaders.rule">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"></Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_directory "C:/Users/valli/Desktop/UCSD/CSE 169/Projects/cse169_starter_windows/shaders" "C:/Users/valli/Desktop/UCSD/CSE 169/Projects/cse169_starter_windows/build/shaders"
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_directory "C:/Users/valli/Desktop/UCSD/CSE 169/Projects/cse169_starter_windows/shaders" "C:/Users/valli/Desktop/UCSD/CSE 169/Projects/cse169_starter_windows/build/Debug/shaders"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -122,7 +122,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"></Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_directory "C:/Users/valli/Desktop/UCSD/CSE 169/Projects/cse169_starter_windows/shaders" "C:/Users/valli/Desktop/UCSD/CSE 169/Projects/cse169_starter_windows/build/shaders"
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_directory "C:/Users/valli/Desktop/UCSD/CSE 169/Projects/cse169_starter_windows/shaders" "C:/Users/valli/Desktop/UCSD/CSE 169/Projects/cse169_starter_windows/build/Debug/shaders"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -136,7 +136,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
       <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'"></Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_directory "C:/Users/valli/Desktop/UCSD/CSE 169/Projects/cse169_starter_windows/shaders" "C:/Users/valli/Desktop/UCSD/CSE 169/Projects/cse169_starter_windows/build/shaders"
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_directory "C:/Users/valli/Desktop/UCSD/CSE 169/Projects/cse169_starter_windows/shaders" "C:/Users/valli/Desktop/UCSD/CSE 169/Projects/cse169_starter_windows/build/Debug/shaders"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -150,7 +150,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</VerifyInputsAndOutputsExist>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'"></Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_directory "C:/Users/valli/Desktop/UCSD/CSE 169/Projects/cse169_starter_windows/shaders" "C:/Users/valli/Desktop/UCSD/CSE 169/Projects/cse169_starter_windows/build/shaders"
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_directory "C:/Users/valli/Desktop/UCSD/CSE 169/Projects/cse169_starter_windows/shaders" "C:/Users/valli/Desktop/UCSD/CSE 169/Projects/cse169_starter_windows/build/Debug/shaders"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone

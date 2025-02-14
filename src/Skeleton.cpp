@@ -22,6 +22,8 @@ bool Skeleton::Load(const char* file)
 	//Joint* root = new Joint();
 	root->Load(token);
 
+	getJoints();
+
 	token.Close();
 	return true;	
 }
@@ -34,4 +36,16 @@ void Skeleton::Update()
 void Skeleton::Draw(glm::mat4 camMatrix, GLuint shader)
 {
 	root->Draw(camMatrix, shader);
+}
+
+glm::mat4 Skeleton::GetWorldMatrix(int joint)
+{
+	return joints.at(joint)->worldMat;
+}
+
+std::vector<Joint*> Skeleton::getJoints()
+{
+	joints.push_back(root);
+	root->GetJoints(&joints);
+	return joints;
 }

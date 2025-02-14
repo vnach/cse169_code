@@ -4,19 +4,16 @@
     <ClCompile Include="C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\src\Animation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\src\Camera.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\src\Channel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\src\Cube.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\src\Shader.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\src\Tokenizer.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\src\Window.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\src\DOF.cpp">
@@ -25,46 +22,56 @@
     <ClCompile Include="C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\src\Joint.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\src\Keyframe.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\src\Shader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\src\Skeleton.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\include\core.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\include\Camera.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\include\Cube.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\include\Shader.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\include\Tokenizer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\include\Window.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\include\Joint.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\include\DOF.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\include\Skeleton.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
+    <ClCompile Include="C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\src\Skin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\src\Tokenizer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\src\Triangle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\src\Vertex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\src\Window.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\src\imgui\imgui.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\src\imgui\imgui_demo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\src\imgui\imgui_draw.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\src\imgui\imgui_impl_glfw.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\src\imgui\imgui_impl_opengl3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\src\imgui\imgui_tables.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\src\imgui\imgui_widgets.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{ECE70CEB-11B5-3FCF-8B8E-686C62CB5990}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files">
       <UniqueIdentifier>{6DAD7A04-5FA9-3AE2-8268-9253C7B8ED40}</UniqueIdentifier>
     </Filter>

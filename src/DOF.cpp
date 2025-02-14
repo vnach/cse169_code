@@ -3,8 +3,8 @@
 DOF::DOF()
 {
 	value = 0;
-	min = 0;
-	max = 0;
+	min = -1000.f;
+	max = 1000.f;
 }
 
 DOF::~DOF()
@@ -14,7 +14,7 @@ DOF::~DOF()
 
 void DOF::setValue(float val)
 {
-	value = val;
+	value = glm::clamp(val, min, max);
 }
 
 float DOF::getValue()
@@ -26,4 +26,14 @@ void DOF::setMinMax(float setMin, float setMax)
 {
 	min = setMin;
 	max = setMax;
+}
+
+void DOF::setName(char* name)
+{
+	dofName = name;
+}
+
+char* DOF::getName()
+{
+	return dofName;
 }

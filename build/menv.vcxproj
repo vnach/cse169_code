@@ -86,12 +86,13 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\include;C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\include\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
       <Optimization>Disabled</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
@@ -102,10 +103,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\include;C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\include\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\include;C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\include\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -128,10 +129,11 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\include;C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\include\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
       <Optimization>MaxSpeed</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
@@ -144,10 +146,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\include;C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\include\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\include;C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\include\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -170,10 +172,11 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\include;C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\include\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
       <Optimization>MinSpace</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
@@ -186,10 +189,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\include;C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\include\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\include;C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\include\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -212,11 +215,12 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\include;C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\include\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
       <Optimization>MaxSpeed</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
@@ -227,10 +231,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\include;C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\include\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\include;C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\include\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -310,23 +314,27 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\main.cpp" />
+    <ClCompile Include="C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\src\Animation.cpp" />
     <ClCompile Include="C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\src\Camera.cpp" />
+    <ClCompile Include="C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\src\Channel.cpp" />
     <ClCompile Include="C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\src\Cube.cpp" />
-    <ClCompile Include="C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\src\Shader.cpp" />
-    <ClCompile Include="C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\src\Tokenizer.cpp" />
-    <ClCompile Include="C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\src\Window.cpp" />
     <ClCompile Include="C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\src\DOF.cpp" />
     <ClCompile Include="C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\src\Joint.cpp" />
+    <ClCompile Include="C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\src\Keyframe.cpp" />
+    <ClCompile Include="C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\src\Shader.cpp" />
     <ClCompile Include="C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\src\Skeleton.cpp" />
-    <ClInclude Include="C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\include\core.h" />
-    <ClInclude Include="C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\include\Camera.h" />
-    <ClInclude Include="C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\include\Cube.h" />
-    <ClInclude Include="C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\include\Shader.h" />
-    <ClInclude Include="C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\include\Tokenizer.h" />
-    <ClInclude Include="C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\include\Window.h" />
-    <ClInclude Include="C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\include\Joint.h" />
-    <ClInclude Include="C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\include\DOF.h" />
-    <ClInclude Include="C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\include\Skeleton.h" />
+    <ClCompile Include="C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\src\Skin.cpp" />
+    <ClCompile Include="C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\src\Tokenizer.cpp" />
+    <ClCompile Include="C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\src\Triangle.cpp" />
+    <ClCompile Include="C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\src\Vertex.cpp" />
+    <ClCompile Include="C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\src\Window.cpp" />
+    <ClCompile Include="C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\src\imgui\imgui.cpp" />
+    <ClCompile Include="C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\src\imgui\imgui_demo.cpp" />
+    <ClCompile Include="C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\src\imgui\imgui_draw.cpp" />
+    <ClCompile Include="C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\src\imgui\imgui_impl_glfw.cpp" />
+    <ClCompile Include="C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\src\imgui\imgui_impl_opengl3.cpp" />
+    <ClCompile Include="C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\src\imgui\imgui_tables.cpp" />
+    <ClCompile Include="C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\src\imgui\imgui_widgets.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="C:\Users\valli\Desktop\UCSD\CSE 169\Projects\cse169_starter_windows\build\ZERO_CHECK.vcxproj">
